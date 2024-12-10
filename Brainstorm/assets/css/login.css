@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'karma-regular';
+    src: url('/Brainstorm/assets/fonts/karma-regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karma-medium';
+    src: url('/Brainstorm/assets/fonts/karma-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: karma-regular;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url('/Brainstorm/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.logo {
+    color: rgb(229, 9, 20);
+    fill: currentColor;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30px;
+    left: 180px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container h2 {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 58px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    background: rgba(128, 128, 128, 0.129);
+    color: #fff;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    font-size: 16px;
+    color: rgb(172, 171, 171);
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.input-group input:focus {
+    padding-top: 30px;
+}
+
+.input-group input {
+    padding-top: 30px;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: 7px;
+    left: 10px;
+    font-size: 12px;
+    color: rgb(172, 171, 171);
+}
+
+input::placeholder {
+    color: transparent;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+    color: rgb(172, 171, 171);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.password-container input:focus + label + #toggle-password {
+    opacity: 1;
+}
+
+#toggle-password.show-password {
+    color: #e50914;
+}
+
+.login-btn {
+    width: 350px;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #f40612;
+}
+
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    display: inline-block;
+    margin: 5px;
+}
