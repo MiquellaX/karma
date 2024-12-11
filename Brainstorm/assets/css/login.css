@@ -1,19 +1,12 @@
 @font-face {
-    font-family: 'karma-regular';
-    src: url('/Brainstorm/assets/fonts/karma-regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'karma-medium';
-    src: url('/Brainstorm/assets/fonts/karma-medium.otf') format('opentype');
+    font-family: 'karma-net';
+    src: url('/Brainstorm/assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: karma-regular;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,6 +14,9 @@
 
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -34,6 +30,7 @@ body {
     flex-direction: column;
     color: #fff;
     position: relative;
+    height: 100vh;
 }
 
 body::before {
@@ -45,6 +42,7 @@ body::before {
     bottom: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: -1;
+    height: 900px;
 }
 
 .logo {
@@ -53,9 +51,9 @@ body::before {
     position: absolute;
     width: 200px;
     height: auto;
-    top: 30px;
-    left: 180px;
-    z-index: 10;
+    top: 24px;
+    left: 174px;
+    z-index: 1;
 }
 
 .logo img {
@@ -64,21 +62,25 @@ body::before {
 
 .login-container {
     background: rgba(0, 0, 0, 0.7);
-    padding: 40px;
+    padding: 90px;
     border-radius: 8px;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 440px;
+    max-width: 500px;
+    height: 725px;
     box-sizing: border-box;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-top: 480px;
 }
 
 .login-container h2 {
-    position: relative;
+    position: absolute;
+    top: 50px;
+    left: 60px;
     text-align: left;
     width: 100%;
     font-size: 2em;
@@ -88,12 +90,13 @@ body::before {
 
 .input-group {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    bottom: 40px;
 }
 
-.input-group input {
+.gaya-input {
     width: 100%;
-    height: 58px;
+    height: 55px;
     padding: 10px;
     font-size: 16px;
     border-radius: 4px;
@@ -106,9 +109,10 @@ body::before {
 
 .input-group label {
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 17px;
+    left: 17px;
     font-size: 16px;
+    font-weight: 400;
     color: rgb(172, 171, 171);
     pointer-events: none;
     transition: 0.2s ease all;
@@ -152,55 +156,321 @@ input::placeholder {
     color: #e50914;
 }
 
+.error {
+    border-color: rgb(235, 57, 66);
+}
+
+.pesan-error {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.error-message {
+    position: relative;
+    color: rgb(235, 57, 66);
+    font-size: 12px;
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.error-message i {
+    margin-right: 3px;
+    color: rgb(235, 57, 66);
+    font-size: 16px;
+}
+
 .login-btn {
-    width: 350px;
+    position: relative;
+    bottom: 40px;
+    width: 330px;
     padding: 10px;
     background-color: #e50914;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 500;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .login-btn:hover {
-    background-color: #f40612;
+    background-color: rgba(255, 0, 13, 0.766);
 }
 
 .forgot-password {
-    margin-top: 10px;
+    margin-top: -20px;
 }
 
 .forgot-password a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.923);
     text-decoration: none;
 }
 
-footer {
+.forgot-password a:hover {
+    color: rgba(255,255,255,0.7);
+    text-decoration: underline;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.custom-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox:checked {
+    background-color: #fff;
+}
+
+.custom-checkbox:checked:hover {
+    background-color: rgba(212, 212, 212, 0.842);
+    border: 1px solid gray;
+}
+
+.custom-checkbox:hover {
+    border: 1px solid white;
+}
+
+.custom-checkbox:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    color: #000;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.newto {
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 30px;
+    text-align: left;
+}
+
+.newto a {
+    margin-left: 2px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.newto a:hover {
+    text-decoration: underline;
+}
+
+.recaptcha-text {
+    font-size: 13px;
+    color: #8c8c8c;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.recaptcha-text a {
+    color: #0071eb;
+    text-decoration: none;
+}
+
+.recaptcha-text a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    position: relative;
     background-color: #000;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+    text-align: left;
+    padding: 20px;
     width: 100%;
+    padding-top: 200px;
 }
 
-footer a {
-    color: #fff;
+.footer-question {
+    position: relative;
+    left: 150px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    margin: 0 10px;
 }
 
-footer a:hover {
+.footer-question a {
+    cursor: pointer;
+}
+
+.footer-question a:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 
 .footer-links {
-    margin-top: 10px;
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-s {
+    position: relative;
+    left: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 130px;
+    margin-top: 20px;
+}
+
+.footer-s a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-right: 15px;
 }
 
 .footer-links a {
-    display: inline-block;
-    margin: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-right: 230px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+body.resized::before {
+    background-color: black;
+}
+
+body.resized .login-container {
+    width: 100%;
+}
+
+body.resized .login-container h2 {
+    position: absolute;
+    left: 33px;
+    top: -81px;
+}
+
+body.resized .input-group {
+    position: relative;
+    margin-bottom: 15px;
+    bottom: 175px;
+}
+
+body.resized .login-btn {
+    position: relative;
+    bottom: 175px;
+    width: 435px;
+    padding: 10px;
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+body.resized .forgot-password {
+    position: relative;
+    top: -120px;
+}
+
+body.resized .checkbox-container {
+    position: relative;
+    top: -120px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+body.resized .newto {
+    top: -120px;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+
+body.resized .recaptcha-text {
+    position: relative;
+    top: -120px;
+    font-size: 13px;
+    color: #8c8c8c;
+    text-align: left;
+}
+
+body.resized .logo img {
+    position: absolute;
+    left: -150px;
+    width: 90px;
+    height: auto;
+}
+
+body.resized .footer {
+    border-top: 1px solid gray;
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+body.resized .footer-question {
+    position: relative;
+    left: 10px;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+body.resized .footer-links {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: row; /* Ensure horizontal layout */
+    flex-wrap: wrap;
+    gap: 0px; /* Space between items */
+    margin-top: 20px;
+    width: 100%;
+}
+
+body.resized .footer-links a {
+    margin-right: 55px;
+    white-space: nowrap;
+}
+
+
+body.resized .footer-s {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-right: 0;
+    gap: 20px;
+    left: 10px;
 }
