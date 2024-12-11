@@ -417,7 +417,7 @@ input::placeholder {
 }
 
 .custom-dropdown.open .dropdown-options {
-    display: flex; /* Show options when dropdown is open */
+    display: flex;
 }
 
 .custom-dropdown.open .dropdown-selected {
@@ -522,9 +522,9 @@ body.resized .footer-links {
     position: relative;
     left: 10px;
     display: flex;
-    flex-direction: row; /* Ensure horizontal layout */
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 0px; /* Space between items */
+    gap: 0px;
     margin-top: 20px;
     width: 100%;
 }
