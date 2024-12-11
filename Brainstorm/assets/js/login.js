@@ -103,16 +103,12 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
 function handleResize() {
     const body = document.body;
 
-    // Check the window width and apply 'resized' class accordingly
     if (window.innerWidth < 768) {
-        // Add resized class to body
         body.classList.add('resized');
     } else {
-        // Remove resized class from body
         body.classList.remove('resized');
     }
 }
 
-// Attach the event listener to resize
 window.addEventListener('resize', handleResize);
 handleResize();
