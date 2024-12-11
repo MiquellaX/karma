@@ -115,6 +115,4 @@ function handleResize() {
 
 // Attach the event listener to resize
 window.addEventListener('resize', handleResize);
-handleResize(); // Call once on load to ensure the class is set
-
-
+handleResize();

@@ -74,7 +74,7 @@ body::before {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 480px;
+    margin-top: 590px;
 }
 
 .login-container h2 {
@@ -357,6 +357,74 @@ input::placeholder {
     text-decoration: underline;
 }
 
+.english-select {
+    position: relative;
+    left: 150px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgba(54, 54, 54, 0.322);
+    border-radius: 4px;
+    color: white;
+}
+
+.dropdown-selected {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 33px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: rgba(54, 54, 54, 0.322);
+}
+
+.dropdown-selected i {
+    font-size: 20px;
+}
+
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.322);
+    border-radius: 4px;
+    z-index: 10;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.dropdown-option:hover {
+    background-color: rgba(54, 54, 54, 0.322);
+}
+
+.custom-dropdown.open .dropdown-options {
+    display: flex; /* Show options when dropdown is open */
+}
+
+.custom-dropdown.open .dropdown-selected {
+    background-color: rgba(54, 54, 54, 0.322);
+}
+
+
 body.resized::before {
     background-color: black;
 }
@@ -368,18 +436,18 @@ body.resized .login-container {
 body.resized .login-container h2 {
     position: absolute;
     left: 33px;
-    top: -81px;
+    top: -85px;
 }
 
 body.resized .input-group {
     position: relative;
     margin-bottom: 15px;
-    bottom: 175px;
+    bottom: 200px;
 }
 
 body.resized .login-btn {
     position: relative;
-    bottom: 175px;
+    bottom: 200px;
     width: 435px;
     padding: 10px;
     background-color: #e50914;
@@ -394,12 +462,12 @@ body.resized .login-btn {
 
 body.resized .forgot-password {
     position: relative;
-    top: -120px;
+    top: -150px;
 }
 
 body.resized .checkbox-container {
     position: relative;
-    top: -120px;
+    top: -150px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -408,7 +476,7 @@ body.resized .checkbox-container {
 }
 
 body.resized .newto {
-    top: -120px;
+    top: -150px;
     position: relative;
     color: rgba(255, 255, 255, 0.7);
     text-align: left;
@@ -416,7 +484,7 @@ body.resized .newto {
 
 body.resized .recaptcha-text {
     position: relative;
-    top: -120px;
+    top: -150px;
     font-size: 13px;
     color: #8c8c8c;
     text-align: left;
@@ -473,4 +541,17 @@ body.resized .footer-s {
     margin-right: 0;
     gap: 20px;
     left: 10px;
+    text-align: center;
+}
+
+body.resized .custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    background-color: rgba(54, 54, 54, 0.322);
+    border-radius: 4px;
+    color: white;
+    left: -141px;
+    top: 20px;
 }

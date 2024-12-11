@@ -60,6 +60,21 @@
             <a href="#">Cookie Preferences</a>
             <a href="#">Corporate Information</a>
         </div>
+
+        <div class="english-select">
+            <div class="custom-dropdown">
+                <div class="dropdown-selected">
+                    <i class="bi bi-translate"></i> English
+                </div>
+                <div class="dropdown-options">
+                    <div class="dropdown-option" data-value="english"><i class="bi bi-translate"></i> English</div>
+                    <div class="dropdown-option" data-value="spanish"><i class="bi bi-translate"></i> Spanish</div>
+                    <div class="dropdown-option" data-value="french"><i class="bi bi-translate"></i> French</div>
+                    <div class="dropdown-option" data-value="german"><i class="bi bi-translate"></i> German</div>
+                    <div class="dropdown-option" data-value="chinese"><i class="bi bi-translate"></i> Chinese</div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="/Brainstorm/assets/js/login.js" defer></script>
 </body>
