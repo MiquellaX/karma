@@ -31,6 +31,7 @@
     </div>
         
 </footer>
-<script src="/Brainstorm/assets/js/karma.js"></script>
+<script src="/Brainstorm/assets/js/karma.js?v=<?php echo time(); ?>"></script>
+<script src="/Brainstorm/assets/js/address.js?v=<?php echo time(); ?>"></script>
 </body>
 </html>

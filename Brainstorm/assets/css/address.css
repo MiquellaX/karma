@@ -61,7 +61,7 @@ label {
     left: 10px;
     font-size: 16px;
     font-weight: 400;
-    color: rgba(50, 50, 50, 0.79);
+    color: rgba(24, 24, 24, 0.79);
     pointer-events: none;
     transition: 0.2s ease all;
 }
@@ -79,7 +79,7 @@ label {
     top: 12px;
     left: 10px;
     font-size: 12px;
-    color: rgba(17, 17, 17, 0.79);
+    color: rgba(24, 24, 24, 0.79);
 }
 
 .tombol {
@@ -114,4 +114,23 @@ form {
     margin: 40px auto;
     padding: 20px;
     background-color: transparent;
+}
+
+.error {
+    border-color: rgb(193, 17, 25);
+}
+
+.d-none {
+    display: none;
+}
+
+form span {
+    color: rgb(193, 17, 25);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+form span i {
+    margin-right: 5px;
 }
