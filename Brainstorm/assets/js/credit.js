@@ -53,19 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
         
             switch (input.name) {
                 case 'karma-cardnumber':
-                    errorMessage = '<i class="bi bi-x-circle"></i> Please enter a card number.';
+                    errorMessage = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter a card number.';
                     break;
                 case 'karma-exp':
-                    errorMessage = '<i class="bi bi-x-circle"></i> Please enter an expiration date.';
+                    errorMessage = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter an expiration date.';
                     break;
                 case 'karma-cvv':
-                    errorMessage = '<i class="bi bi-x-circle"></i> Please enter a CVV.';
+                    errorMessage = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter a CVV.';
                     break;
                 case 'karma-nameoncard':
-                    errorMessage = '<i class="bi bi-x-circle"></i> Name is required.';
+                    errorMessage = '<img src="/Brainstorm/assets/images/x.svg"></img> Name is required.';
                     break;
                 default:
-                    errorMessage = `<i class="bi bi-x-circle"></i> This field is required.`;
+                    errorMessage = `<img src="/Brainstorm/assets/images/x.svg"></img> This field is required.`;
                     break;
             }
         
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
             input.classList.add('error');
             if (errorMessageEl) {
-                errorMessageEl.innerHTML = `<i class="bi bi-x-circle"></i> ${errorMessage}`;
+                errorMessageEl.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> ${errorMessage}`;
                 errorMessageEl.classList.remove('d-none');
             }
         }
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             if (!isValid) {
-                expError.innerHTML = `<i class="bi bi-x-circle"></i> ${errorMessage}`;
+                expError.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> ${errorMessage}`;
                 expError.classList.remove('d-none');
                 expInput.classList.add('error');
             } else {
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 expInput.classList.remove('error');
             }
         } else {
-            expError.innerHTML = '<i class="bi bi-x-circle"></i> Please enter an expiration date.';
+            expError.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter an expiration date.';
             expError.classList.remove('d-none');
             expInput.classList.add('error');
         }

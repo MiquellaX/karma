@@ -175,15 +175,18 @@ input::placeholder {
 .error-message {
     position: relative;
     color: rgb(235, 57, 66);
-    font-size: 12px;
+    font-size: 13px;
     width: 100%;
     text-wrap: wrap;
+    vertical-align: bottom;
 }
 
-.error-message i {
+.error-message img {
     margin-right: 3px;
     color: rgb(235, 57, 66);
     font-size: 16px;
+    margin-top: 5px;
+    vertical-align: text-bottom;
 }
 
 .login-btn {

@@ -24,10 +24,10 @@ function validatePasswordLength() {
 
     if (passwordField.value.length < 4 && passwordField.value !== "") {
         passwordField.classList.add('error');
-        errorMessage.innerHTML = '<i class="bi bi-x-circle"></i> Your password must contain between 4 and 60 characters.';
+        errorMessage.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Your password must contain between 4 and 60 characters.';
     } else if (passwordField.value === "") {
         passwordField.classList.add('error');
-        errorMessage.innerHTML = '<i class="bi bi-x-circle"></i> Password is required.';
+        errorMessage.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Your password must contain between 4 and 60 characters.';
     } else {
         passwordField.classList.remove('error');
         errorMessage.textContent = '';
@@ -40,7 +40,7 @@ function validateUserField() {
 
     if (userField.value.trim() === "") {
         userField.classList.add('error');
-        errorMessage.innerHTML = '<i class="bi bi-x-circle"></i> Email or mobile number is required.';
+        errorMessage.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter a valid email or phone number.';
     } else {
         userField.classList.remove('error');
         errorMessage.textContent = '';
@@ -75,9 +75,9 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
         
         passwordField.classList.add('error');
         if (passwordField.value === "") {
-            errorMessagePassword.innerHTML = '<i class="bi bi-x-circle"></i> Password is required.';
+            errorMessagePassword.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Your password must contain between 4 and 60 characters.';
         } else {
-            errorMessagePassword.innerHTML = '<i class="bi bi-x-circle"></i> Your password must contain between 4 and 60 characters.';
+            errorMessagePassword.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Your password must contain between 4 and 60 characters.';
         }
     } else {
         passwordField.classList.remove('error');
@@ -89,7 +89,7 @@ document.querySelector('.login-form').addEventListener('submit', function(event)
         isValid = false;
         
         userField.classList.add('error');
-        errorMessageUser.innerHTML = '<i class="bi bi-x-circle"></i> Email or mobile number is required.';
+        errorMessageUser.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter a valid email or phone number.';
     } else {
         userField.classList.remove('error');
         errorMessageUser.textContent = '';

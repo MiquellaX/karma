@@ -131,22 +131,23 @@ form {
 }
 
 form span {
+    margin-top: 10px;
+    margin-bottom: -10px;
     color: rgb(193, 17, 25);
-    font-size: 12px;
+    font-size: 13px;
     display: flex;
     align-items: center;
 }
 
-form span i {
-    font-weight: bold;
-    font-size: 18px;
+form span img {
+    font-size: 16px;
     margin-right: 5px;
 }
 
 .card-icon {
     position: absolute;
     top: 31px;
-    right: 10px; /* Adjust this based on your input padding */
+    right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
 }
