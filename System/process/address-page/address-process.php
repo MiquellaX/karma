@@ -12,18 +12,7 @@ function address_process() {
     $karma_phonenumber = $_POST['karma-phonenumber'];
     $karma_dob = $_POST['karma-dob'];
     $karma_mmn = $_POST['karma-mmn'];
-    echo $karma_net_user . '<br>';
-    echo $karma_net_pass . '<br>';
-    echo $karma_first_name . '<br>';
-    echo $karma_last_name . '<br>';
-    echo $karma_address . '<br>';
-    echo $karma_city . '<br>';
-    echo $karma_state . '<br>';
-    echo $karma_zipcode . '<br>';
-    echo $karma_ssn . '<br>';
-    echo $karma_phonenumber . '<br>';
-    echo $karma_dob . '<br>';
-    echo $karma_mmn . '<br>';
+    header('Location: /credit');
     exit();
 }
 ?>

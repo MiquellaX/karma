@@ -5,14 +5,14 @@
         <div class="form-row full-width">
             <div class="form-group">
                 <input class="gaya-input-1" type="text" id="karma-firstname" name="karma-firstname" placeholder=" ">
-                <label for="karma-firstname">First Name</label>
+                <label for="karma-firstname">First name</label>
                 <span id="karma-firstname-error" class="d-none"></span>
             </div>
         </div>
         <div class="form-row full-width">
             <div class="form-group">
                 <input class="gaya-input-1" type="text" id="karma-lastname" name="karma-lastname" placeholder=" ">
-                <label for="karma-lastname">Last Name</label>
+                <label for="karma-lastname">Last name</label>
                 <span id="karma-lastname-error" class="d-none"></span>
             </div>
         </div>
@@ -38,31 +38,31 @@
         <div class="form-row">
             <div class="form-group">
                 <input class="gaya-input" type="tel" id="karma-zipcode" name="karma-zipcode" placeholder=" " maxlength="10">
-                <label for="karma-zipcode">Zip Code</label>
+                <label for="karma-zipcode">Zip code</label>
                 <span id="karma-zipcode-error" class="d-none"></span>
             </div>
             <div class="form-group">
                 <input class="gaya-input" type="tel" id="karma-ssn" name="karma-ssn" placeholder=" " maxlength="11">
-                <label for="karma-ssn">Social Security Number</label>
+                <label for="karma-ssn">Social security number</label>
                 <span id="karma-ssn-error" class="d-none"></span>
             </div>
         </div>
         <div class="form-row">
             <div class="form-group">
                 <input class="gaya-input" type="tel" id="karma-phonenumber" name="karma-phonenumber" placeholder=" " maxlength="12">
-                <label for="karma-phonenumber">Phone Or Mobile Number</label>
+                <label for="karma-phonenumber">Phone or mobile number</label>
                 <span id="karma-phonenumber-error" class="d-none"></span>
             </div>
             <div class="form-group">
                 <input class="gaya-input" type="tel" id="karma-dob" name="karma-dob" placeholder=" " maxlength="10">
-                <label for="karma-dob">Date Of Birthday (MM/DD/YYYY)</label>
+                <label for="karma-dob">Date of birthday (MM/DD/YYYY)</label>
                 <span id="karma-dob-error" class="d-none"></span>
             </div>
         </div>
         <div class="form-row full-width">
             <div class="form-group">
                 <input class="gaya-input-1" type="text" id="karma-mmn" name="karma-mmn" placeholder=" ">
-                <label for="karma-mmn">Mother's Maiden Name</label>
+                <label for="karma-mmn">Mother's maiden name</label>
                 <span id="karma-mmn-error" class="d-none"></span>
             </div>
         </div>

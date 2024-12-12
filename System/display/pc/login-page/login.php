@@ -70,7 +70,7 @@ function login() {
             <div class="english-select">
                 <div class="custom-dropdown">
                     <div class="dropdown-selected">
-                        <i class="bi bi-globe"></i> English
+                        <i class="bi bi-translate"></i> English
                     </div>
                     <div class="dropdown-options">
                         <div class="dropdown-option" data-value="english"><i class="bi bi-translate"></i> English</div>
