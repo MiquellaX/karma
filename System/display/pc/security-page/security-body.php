@@ -1,15 +1,10 @@
 <main>
-    <div class="warning-content">
-        <img src="/Brainstorm/assets/images/logo.svg">
-        <h1> Your account has been locked! </h1>
-        <b> Please verify your account </b>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-        <span> KONTOL </span>
-    </div>
+    <form action="/email">
+        <div class="warning-content">
+            <img src="/Brainstorm/assets/images/Warning.svg">
+            <h1> Account Locked </h1>
+            <p> Your account has been locked, please verify your account. </p>
+            <button> Continue </button>
+        </div>
+    </form>
 </main>

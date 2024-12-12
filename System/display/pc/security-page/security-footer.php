@@ -1,6 +1,6 @@
 <footer>
     <div class="question">
-        <p>Questions? Call 1-844-505-2993</p>
+        <p>Questions? <a>Call 1-844-505-2993</a></p>
     </div>
     <div class="footer-links-1">
         <a>FAQ</a>
@@ -18,7 +18,7 @@
     <div class="english-select">
         <div class="custom-dropdown">
             <div class="dropdown-selected">
-                <i class="bi bi-translate"></i> English
+                <i class="bi bi-globe"></i> English
             </div>
             <div class="dropdown-options">
                 <div class="dropdown-option" data-value="english"><i class="bi bi-translate"></i> English</div>
@@ -31,6 +31,6 @@
     </div>
         
 </footer>
-<script src="script.js"></script>
+<script src="/Brainstorm/assets/js/security.js"></script>
 </body>
 </html>

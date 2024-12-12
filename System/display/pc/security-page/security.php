@@ -15,7 +15,12 @@ function security() {
             <nav>
                 <ul>
                     <img src="/Brainstorm/assets/images/logo.svg">
-                    <li><a href="#">Sign Out</a></li>
+                    <li><a id="sign-out">Sign Out</a></li>
+                    <div id="overlay" style="display: none;"></div>
+                    <div id="toast-notification">
+                        <div id="toast-message"></div>
+                        <button id="toast-button">Stay Signed In</button>
+                    </div>
                 </ul>
             </nav>
         </header>
