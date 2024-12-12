@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'karma-net';
-    src: url('/Brainstorm/assets/fonts/KFOmCnqEu92Fr1Mu4mxK.woff2') format('woff2');
+    src: url('/Brainstorm/assets/fonts/karma-net-normal.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 * {
-    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-family: karma-net;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -353,7 +353,8 @@ input::placeholder {
     margin-right: 230px;
 }
 
-.footer-links a:hover {
+a:hover {
+    cursor: pointer;
     text-decoration: underline;
 }
 

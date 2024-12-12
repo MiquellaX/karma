@@ -51,7 +51,7 @@ function login() {
         </main>
 
         <div class="footer">
-            <p class="footer-question">Questions? Call <a>007-803-321-8275</a></p>
+            <p class="footer-question">Questions? Call <a>1-844-505-2993</a></p>
             <div class="footer-links">
                 <a>FAQ</a>
                 <a>Help Center</a>

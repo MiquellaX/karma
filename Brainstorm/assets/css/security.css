@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'karma-net-normal';
+    src: url('/Brainstorm/assets/fonts/karma-net-normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karma-net-medium';
+    src: url('/Brainstorm/assets/fonts/karma-net-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'karma-net-bold';
+    src: url('/Brainstorm/assets/fonts/karma-net-bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: karma-net-normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.385);
+}
+
+header img {
+    width: 165px;
+    height: auto;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header nav a {
+    font-family: karma-net-medium;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.warning-content {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.warning-content img {
+    width: 200px;
+    height: auto;
+}
+
+.todo {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.275);
+    border-radius: 4px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #7373731f;
+    color: #737373;
+    text-align: center;
+}
+
+.question {
+    font-size: 16px;
+    color: #737373;
+}
+
+.footer-links-1, .footer-links-2 {
+    font-size: 13px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 68%;
+}
+
+.footer-links-1 a, .footer-links-2 a {
+    text-align: left;
+}
+
+.ad-choices {
+    margin-top: -10px;
+}
+
+.english-select {
+    position: relative;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    background-color: white;
+    border-radius: 4px;
+    color: #737373;
+}
+
+.dropdown-selected {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 33px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.dropdown-selected i {
+    font-size: 20px;
+    color: black;
+}
+
+.dropdown-options {
+    display: none;
+}
+
+.dropdown-option {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.dropdown-option:hover {
+    background-color: rgba(54, 54, 54, 0.322);
+}
+
+.custom-dropdown.open .dropdown-options {
+    display: flex;
+}
+
+.custom-dropdown.open .dropdown-selected {
+    background-color: rgba(54, 54, 54, 0.322);
+}
