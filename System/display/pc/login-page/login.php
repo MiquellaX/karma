@@ -35,33 +35,33 @@ function login() {
                         </div>
                     </div>
                     <button type="submit" class="login-btn">Sign In</button>
-                    <p class="forgot-password"><a href="#">Forgot password?</a></p>
+                    <p class="forgot-password"><a>Forgot password?</a></p>
                     <div class="checkbox-container">
                         <input type="checkbox" id="remember-me" class="custom-checkbox">
                         <label for="remember-me">Remember me</label>
                     </div>
                     <div class="newto">
-                        <p> New to Netflix? <a href="#"> Sign up now. </a> </p>
+                        <p> New to Netflix? <a> Sign up now. </a> </p>
                     </div>
                     <div class="recaptcha-text">
-                        <p> This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="#"> Learn more. </a></p>
+                        <p> This page is protected by Google reCAPTCHA to ensure you're not a bot. <a> Learn more. </a></p>
                     </div>
                 </form>
             </div>
         </main>
 
         <div class="footer">
-            <p href="#" class="footer-question">Questions? Call <a>007-803-321-8275</a></p>
+            <p class="footer-question">Questions? Call <a>007-803-321-8275</a></p>
             <div class="footer-links">
-                <a href="#">FAQ</a>
-                <a href="#">Help Center</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Privacy</a>
+                <a>FAQ</a>
+                <a>Help Center</a>
+                <a>Terms of Use</a>
+                <a>Privacy</a>
             </div>
 
             <div class="footer-s">
-                <a href="#">Cookie Preferences</a>
-                <a href="#">Corporate Information</a>
+                <a>Cookie Preferences</a>
+                <a>Corporate Information</a>
             </div>
 
             <div class="english-select">

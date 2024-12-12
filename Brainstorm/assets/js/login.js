@@ -110,5 +110,13 @@ function handleResize() {
     }
 }
 
+function preventRightClick(event) {
+    event.preventDefault();
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.addEventListener('contextmenu', preventRightClick);
+});
+
 window.addEventListener('resize', handleResize);
 handleResize();
