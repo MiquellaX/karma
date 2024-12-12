@@ -1,0 +1,117 @@
+h1 {
+    width: 400px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row.full-width {
+    justify-content: center;
+}
+
+.form-group {
+    flex-basis: 49%;
+    position: relative;
+}
+
+.form-row.full-width .form-group {
+    flex-basis: 100%;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #666;
+    transition: all 0.3s ease-in-out;
+}
+
+.gaya-input-1 {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    color: black;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.gaya-input {
+    width: 90%;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    color: black;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.form-group label {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(50, 50, 50, 0.79);
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+.form-group input:focus {
+    padding-top: 15px;
+}
+
+.form-group input {
+    padding-top: 15px;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: 12px;
+    left: 10px;
+    font-size: 12px;
+    color: rgba(17, 17, 17, 0.79);
+}
+
+.tombol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submit-button {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: #ce0913;
+}
+
+form {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: transparent;
+}

