@@ -5,7 +5,7 @@ const zipcodeRegex = /^\d{5}(-\d{4})?$/;
 const ssnRegex = /^\d{3}-\d{2}-\d{4}$/;
 const phoneNumberRegex = /^\d{3}-\d{3}-\d{4}$/;
 const dobRegex = /^\d{2}\/\d{2}\/\d{4}$/;
-const nameFieldRegex = /^[A-Za-z0-9.-]{3,}$/;
+const nameFieldRegex = /^[A-Za-z0-9.\-\s]{3,}$/;
 
 inputs.forEach(input => {
     input.addEventListener('input', () => {
@@ -187,7 +187,7 @@ function formatField(input) {
     }
 
     if (input.id === 'karma-firstname' || input.id === 'karma-lastname' || input.id === 'karma-city' || input.id === 'karma-state' || input.id === 'karma-address' || input.id === 'karma-mmn') {
-        formattedValue = formattedValue.replace(/[^A-Za-z0-9.-]/g, '');
+        formattedValue = formattedValue.replace(/[^A-Za-z0-9.\-\s]/g, '');
     }
 
     input.value = formattedValue;

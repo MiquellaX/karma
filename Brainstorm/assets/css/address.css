@@ -133,5 +133,7 @@ form span {
 }
 
 form span i {
+    font-weight: bold;
+    font-size: 18px;
     margin-right: 5px;
 }
