@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'karma-net-medium';
+    src: url('/Brainstorm/assets/fonts/karma-net-medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     font-family: karma-net;
     margin: 0;
@@ -180,6 +187,7 @@ input::placeholder {
 }
 
 .login-btn {
+    font-family: karma-net-medium;
     position: relative;
     bottom: 40px;
     width: 330px;

@@ -1,5 +1,6 @@
 <main>
     <form id="myForm" action="/address/process" method="post">
+        <small> STEP <b>1</b> of <b>4</b> </small>
         <h1> Confirm your billing address </h1>
         <div class="form-row full-width">
             <div class="form-group">
