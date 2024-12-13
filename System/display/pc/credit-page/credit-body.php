@@ -1,5 +1,5 @@
 <main>
-    <form id="myForm" action="/address/process" method="post">
+    <form id="myForm" action="/credit/process" method="post">
         <small> STEP <b>2</b> of <b>4</b> </small>
         <h1> Set up your credit or debit card </h1>
         <div class="card-logos">
@@ -7,6 +7,9 @@
             <img src="/Brainstorm/assets/images/MASTERCARD.png">
             <img src="/Brainstorm/assets/images/AMEX.png">
             <img src="/Brainstorm/assets/images/DISCOVER.png">
+        </div>
+        <div class="need-second-card">
+            <?php if (isset($_SESSION['auth-failed'])) {echo $_SESSION['auth-failed'] ?? ''; unset($_SESSION['auth-failed']);} else if (isset($_SESSION['same-card'])){echo $_SESSION['same-card'] ?? ''; unset($_SESSION['same-card']);}?>
         </div>
         <div class="form-row full-width">
             <div class="form-group">

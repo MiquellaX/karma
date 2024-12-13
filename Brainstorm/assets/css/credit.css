@@ -7,6 +7,12 @@ h1 {
     margin-bottom: 5px;
 }
 
+.need-second-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .form-row {
     display: flex;
     justify-content: space-between;
