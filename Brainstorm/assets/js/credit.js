@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let isValid = true;
 
         input.classList.remove('error');
+        input.classList.remove('valid');
         if (errorMessageEl) {
             errorMessageEl.textContent = '';
             errorMessageEl.classList.add('d-none');
@@ -85,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isSubmit && isValid && errorMessageEl) {
             errorMessageEl.textContent = '';
             errorMessageEl.classList.add('d-none');
+        }
+
+        if (isValid) {
+            input.classList.add('valid');
         }
 
         return isValid;
@@ -197,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const expValue = expInput.value.trim();
         const expParts = expValue.split('/');
         let isValid = true;
+        expInput.classList.remove('error', 'valid'); 
 
         if (expParts.length === 2) {
             const month = parseInt(expParts[0]);
@@ -220,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 expInput.classList.add('error');
             } else {
                 expError.classList.add('d-none');
-                expInput.classList.remove('error');
+                expInput.classList.add('valid');
             }
         } else {
             expError.innerHTML = '<img src="/Brainstorm/assets/images/x.svg"></img> Please enter an expiration date.';

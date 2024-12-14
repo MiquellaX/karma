@@ -66,6 +66,14 @@ label {
     transition: all 0.3s ease;
 }
 
+.form-group input:focus {
+    padding-top: 15px;
+}
+
+.form-group input {
+    padding-top: 15px;
+}
+
 .form-group label {
     position: absolute;
     top: 30px;
@@ -75,14 +83,6 @@ label {
     color: rgba(24, 24, 24, 0.79);
     pointer-events: none;
     transition: 0.2s ease all;
-}
-
-.form-group input:focus {
-    padding-top: 15px;
-}
-
-.form-group input {
-    padding-top: 15px;
 }
 
 .form-group input:focus + label,
@@ -130,6 +130,10 @@ form {
 
 .error {
     border-color: rgb(193, 17, 25);
+}
+
+.valid {
+    border-color: green;
 }
 
 .d-none {
