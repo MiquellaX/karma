@@ -6,9 +6,12 @@ function login() {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login Page</title>
+        <title>Netflix</title>
         <link rel="stylesheet" href="/Brainstorm/assets/css/login.css?v=<?php echo time(); ?>">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+        <meta name="apple-touch-icon" content="/Brainstorm/assets/images/net-152.jpg">
+        <link rel="shortcut icon" href="/Brainstorm/assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="/Brainstorm/assets/images/favicon.png">
     </head>
     <body>
         <div class="logo">

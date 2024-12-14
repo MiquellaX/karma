@@ -13,6 +13,9 @@ function credit() {
         <link rel="stylesheet" href="/Brainstorm/assets/css/karma-styles.css?v=<?php echo time(); ?>">
         <link rel="stylesheet" href="/Brainstorm/assets/css/credit.css?v=<?php echo time(); ?>">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+        <meta name="apple-touch-icon" content="/Brainstorm/assets/images/net-152.jpg">
+        <link rel="shortcut icon" href="/Brainstorm/assets/images/favicon.ico">
+        <link rel="apple-touch-icon" href="/Brainstorm/assets/images/favicon.png">
     </head>
     <body>
         <header>
