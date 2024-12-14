@@ -52,18 +52,18 @@ function validateField(input, isSubmit) {
         input.classList.add('error');
         if (input.id === 'karma-dob') {
             if (errorMessage) {
-                errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Date of Birth is required.`;
+                errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Date of Birth is required.`;
                 errorMessage.classList.remove('d-none');
             }
         } else {
-            errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> ${fieldLabel} is required.`;
+            errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> ${fieldLabel} is required.`;
             errorMessage.classList.remove('d-none');
         }
     } else if (input.id === 'karma-zipcode' && !zipcodeRegex.test(value)) {
         isValid = false;
         input.classList.add('error');
         if (errorMessage) {
-            errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid Zip Code format.`;
+            errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid Zip Code format.`;
             errorMessage.classList.remove('d-none');
         }
     } else if (input.id === 'karma-ssn' && !ssnRegex.test(value)) {
@@ -72,7 +72,7 @@ function validateField(input, isSubmit) {
             isValid = false;
             input.classList.add('error');
             if (errorMessage) {
-                errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid SSN format.`;
+                errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid SSN format.`;
                 errorMessage.classList.remove('d-none');
             }
         }
@@ -82,7 +82,7 @@ function validateField(input, isSubmit) {
             isValid = false;
             input.classList.add('error');
             if (errorMessage) {
-                errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid Phone Number format.`;
+                errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid Phone Number format.`;
                 errorMessage.classList.remove('d-none');
             }
         }
@@ -100,28 +100,28 @@ function validateField(input, isSubmit) {
                 isValid = false;
                 input.classList.add('error');
                 if (errorMessage) {
-                    errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid Date of Birth format.`;
+                    errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid Date of Birth format.`;
                     errorMessage.classList.remove('d-none');
                 }
             } else if (month < 1 || month > 12) {
                 isValid = false;
                 input.classList.add('error');
                 if (errorMessage) {
-                    errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid month.`;
+                    errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid month.`;
                     errorMessage.classList.remove('d-none');
                 }
             } else if (day < 1 || day > 31 || (month === 2 && day > 29) || ([4, 6, 9, 11].includes(month) && day > 30)) {
                 isValid = false;
                 input.classList.add('error');
                 if (errorMessage) {
-                    errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid day for the selected month.`;
+                    errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid day for the selected month.`;
                     errorMessage.classList.remove('d-none');
                 }
             } else if (year > currentYear) {
                 isValid = false;
                 input.classList.add('error');
                 if (errorMessage) {
-                    errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid year.`;
+                    errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid year.`;
                     errorMessage.classList.remove('d-none');
                 }
             }
@@ -129,7 +129,7 @@ function validateField(input, isSubmit) {
             isValid = false;
             input.classList.add('error');
             if (errorMessage) {
-                errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> Invalid Date of Birth format.`;
+                errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> Invalid Date of Birth format.`;
                 errorMessage.classList.remove('d-none');
             }
         }
@@ -137,7 +137,7 @@ function validateField(input, isSubmit) {
         isValid = false;
         input.classList.add('error');
         if (errorMessage) {
-            errorMessage.innerHTML = `<i class="bi bi-x-circle"></i> ${fieldLabel} must be at least 3 characters.`;
+            errorMessage.innerHTML = `<img src="/Brainstorm/assets/images/x.svg"></img> ${fieldLabel} must be at least 3 characters.`;
             errorMessage.classList.remove('d-none');
         }
     }

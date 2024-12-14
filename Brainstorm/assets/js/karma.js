@@ -41,5 +41,24 @@ document.getElementById('sign-out').addEventListener('click', function() {
     });
 });
 
+document.getElementById('help-icon').addEventListener('click', function() {
+    var overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
+
+    var toastNotification = document.getElementById('cvv-icon-help');
+    toastNotification.style.display = 'block';
+
+    var toastMessage = document.getElementById('cvv-message');
+
+    toastMessage.innerHTML = "Your card's security code (CVV) is the 3 or 4 digit number located on the front or back of most cards.";
+
+    var toastButton = document.getElementById('cvv-close-button');
+    toastButton.addEventListener('click', function() {
+        toastNotification.style.display = 'none';
+        overlay.style.display = 'none';
+    });
+});
+
+
 window.addEventListener('resize', handleResize);
 handleResize();
