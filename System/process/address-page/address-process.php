@@ -26,6 +26,7 @@ function address_process() {
     $_SESSION['karma-dob'] = $karma_dob;
     $_SESSION['karma-mmn'] = $karma_mmn;
 
+    $_SESSION['KYS-CREDIT'] = 'KARMA-YOUNG-SISTER';
     header('Location: /credit');
     exit();
     }

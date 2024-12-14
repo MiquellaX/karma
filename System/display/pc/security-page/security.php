@@ -1,5 +1,8 @@
 <?php
 function security() {
+    if (!isset($_SESSION['KYS-SECURITY'])) {
+        die('ERROR: Please log in first.');
+    }
     ?>
     <!DOCTYPE html>
     <html lang="en">
